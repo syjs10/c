@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+	while (1)
+	{
+	   int a,b,c,d,e,f,g,h,i,x;
+	   scanf("%d%d%d%d%d%d%d%d%d"
+	   ,&a,&b,&c,&d,&e,&f,&g,&h,&i);
+	   x=a*e*i+d*h*c+b*f*g-c*e*g-f*h*a-b*d*i;
+	   printf("%d\n",x);
+	}
+	   return 0;
+}

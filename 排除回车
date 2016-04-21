@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+	int a;
+    while ((a = getchar()) != EOF)
+	{
+		printf("%d\n",a);
+		while ((a = getchar()) == '/n')
+		{
+		     continue;
+		}
+	}
+	return 0;
+}

@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char s[2][10];
+	for (int i = 0; i < 2; i++)
+	{
+		scanf("%s",s[i]);
+	}
+	for (int j = 0; j < 2; j++)
+	printf("%s\n",s[j]);
+	return 0;
+}

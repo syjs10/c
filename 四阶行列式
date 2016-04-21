@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+	int   num;
+	int   aa,ab,ac,ad;
+	int   ba,bb,bc,bd;
+	int   ca,cb,cc,cd;
+	int   da,db,dc,dd;
+  while (1)
+  {
+	printf("按顺序输入矩阵：\n");
+	scanf("%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d",
+	      &aa,&ab,&ac,&ad,
+	      &ba,&bb,&bc,&bd,
+	      &ca,&cb,&cc,&cd,
+	      &da,&db,&dc,&dd);
+    num = aa*(bb*cc*dd+cb*dc*bd+db*bc*cd-bd*cc*db-bc*cb*dd-bb*dc*cd)
+         -ab*(ba*cc*dd+ca*dc*bd+da*bc*cd-bd*cc*da-cd*dc*ba-bc*ca*dd)
+		 +ac*(ba*cb*dd+ca*db*bd+da*bb*cd-bd*cb*da-cd*db*ba-bb*ca*dd)
+		 -ad*(ba*cb*dc+bb*cc*da+bc*ca*db-bc*cb*da-cc*db*ba-bb*ca*dc);
+         printf("%d\n",num);
+   }
+		 return 0;     
+} 
