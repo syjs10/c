@@ -3,7 +3,7 @@
 void sort(int *a, int l, int r){
     if (l > r) {
         return;
-    }
+    }else {
         int i = l;
         int j = r;
         int key = a[l];
@@ -20,7 +20,7 @@ void sort(int *a, int l, int r){
         a[i] = key;
         sort(a, l, i - 1);
         sort(a, i + 1, r);
-
+    }
 }
 int main(int argc, char const *argv[]) {
     int n;
