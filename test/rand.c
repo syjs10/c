@@ -9,12 +9,18 @@
 #include <time.h>
 int main()
 {
-	int n = 1000000;
-//	scanf("%d", &n);
-	printf("%d\n", n);
-	srand((unsigned)time(NULL));
-	while (n--){
-		printf("%d ",(int) rand() % 1000000 + 1);
+		srand((unsigned)time(NULL));
+	for(int i = 0; i < 70000; i++){
+		int n = 50;
+		int k = 0;
+		while (n--){
+			int a;
+			a = (int) rand() % 2;
+			if (a == 1){
+				k++;
+			}
+		}
+		printf("%d\n", k);
 	}
 	return 0;
 }
